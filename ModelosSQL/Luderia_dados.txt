@@ -41,10 +41,10 @@ CPF, Telefone
 }
 
 Distribuidora = {
-Nome, Email, CNPJ, Endereco
-'Montanha Solitária Games', 'montanha_solitaria@smaug.com.br', '97.170.329/0001-32', 'Erebor, Mirkwood, Terra Média'
-'Jogos do Tom Bombadil', 'bombadil@bombadil.com.br', '56.621.637/0001-50', 'Casa de Tom Bombadil, Floresta Velha, Terra Média'
-'Brincadeiras de Mordor', 'mordor@mordor.com.br', '75.524.945/0001-01', 'Barad-dur, Mordor, Terra Média'
+Nome, CNPJ, Endereco
+'Montanha Solitária Games', '97.170.329/0001-32', 'Erebor, Mirkwood, Terra Média'
+'Jogos do Tom Bombadil', '56.621.637/0001-50', 'Casa de Tom Bombadil, Floresta Velha, Terra Média'
+'Brincadeiras de Mordor', '75.524.945/0001-01', 'Barad-dur, Mordor, Terra Média'
 }
 
 Telefone_distribuidora = {
