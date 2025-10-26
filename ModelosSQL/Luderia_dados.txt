@@ -1,11 +1,12 @@
 group: luderia_board_of_games
 
 Cliente = {
-Nome, Email, CPF_Cliente, Endereco
-'Frodo Bolseiro', 'frodo_bolseiro@condado.com.br', 682.588.330-57, 'Bolsão, Condado, Terra Média'
-'Samwise Gangee', 'sam_jardinagem@condado.com.br', 058.612.680-53, 'Toca nº3, Condado, Terra Média'
-'Meriadoc Brandebuque', 'brandemerry@condado.com.br', 728.489.420-29, 'Toca nº1, Condado, Terra Média'
-'Peregrin Tuk', 'pippin_tuk@condado.com.br', 444.761.110-41, 'Toca nº2, Condado, Terra Média'
+Nome, Email, CPF, Endereco, DataNascimento:date
+'Frodo Bolseiro', 'frodo_bolseiro@condado.com.br', 682.588.330-57, 'Bolsão, Condado, Terra Média', 2015-07-02
+'Samwise Gangee', 'sam_jardinagem@condado.com.br', 058.612.680-53, 'Toca nº3, Condado, Terra Média', 2017-08-15
+'Meriadoc Brandebuque', 'brandemerry@condado.com.br', 728.489.420-29, 'Toca nº1, Condado, Terra Média', 2012-05-22
+'Peregrin Tuk', 'pippin_tuk@condado.com.br', 444.761.110-41, 'Toca nº2, Condado, Terra Média', 2005-12-11
+Gandalf, 'ocinzento@valfenda.com.br', 659.068.290-91, 'Casa cinza, Valfenda, Terra Média', 1025-01-01
 }
 
 Telefone_cliente = {
@@ -21,11 +22,11 @@ CPF, Telefone
 }
 
 Funcionario = {
-Nome, Email, CPF_Funcionario, Endereco
-Gandalf, 'ocinzento@valfenda.com.br', 659.068.290-91, 'Casa cinza, Valfenda, Terra Média'
-Aragorn, 'passolargo@valfenda.com.br', 726.685.180-75, 'Estalagem Ponei Saltitante, Bri, Terra Média'
-'Arwen Undómiel', 'estrela_vespertina@valfenda.com.br', 638.163.030-21, 'Casa dourada, Valfenda, Terra Média'
-Galadriel, 'senhora_da_luz@lothlorien.com.br', 305.465.920-82, 'Palácio real, Lothlórien, Terra Média'
+Nome, Email, CPF, Endereco, DataNascimento:date
+Gandalf, 'ocinzento@valfenda.com.br', 659.068.290-91, 'Casa cinza, Valfenda, Terra Média', 1025-01-01
+Aragorn, 'passolargo@valfenda.com.br', 726.685.180-75, 'Estalagem Ponei Saltitante, Bri, Terra Média', 1961-06-22
+'Arwen Undómiel', 'estrela_vespertina@valfenda.com.br', 638.163.030-21, 'Casa dourada, Valfenda, Terra Média', 1971-06-28
+Galadriel, 'senhora_da_luz@lothlorien.com.br', 305.465.920-82, 'Palácio real, Lothlórien, Terra Média', 1000-12-12
 }
 
 Telefone_funcionario = {
@@ -71,6 +72,9 @@ ID_Jogo, NomeJogo, Descricao, FaixaEtaria:number, ValorVenda:number, Desconto_po
 0011, Rummikub, 'Jogue Rummikub com seus amigos e tenha toda a atenção e raciocínio para sair como o grande vencedor! O desafio de Rummikub está em se livrar de todas as pedras em suas mãos antes dos seus oponentes.', 7, 279.99, 10, '56.621.637/0001-50', 2025-10-09, 305.465.920-82, ABC-123, 2025-10-01, 129.99
 0012, Rummikub, 'Jogue Rummikub com seus amigos e tenha toda a atenção e raciocínio para sair como o grande vencedor! O desafio de Rummikub está em se livrar de todas as pedras em suas mãos antes dos seus oponentes.', 7, 279.99, 10, '56.621.637/0001-50', 2025-10-09, 305.465.920-82, ABC-123, 2025-10-01, 129.99
 0013, Rummikub, 'Jogue Rummikub com seus amigos e tenha toda a atenção e raciocínio para sair como o grande vencedor! O desafio de Rummikub está em se livrar de todas as pedras em suas mãos antes dos seus oponentes.', 7, 279.99 , 10, '56.621.637/0001-50', 2025-08-05, 305.465.920-82, ABC-123, 2025-07-22, 129.99
+0014, 'Dungeons & Dragons Basic Set (First Edition)', 'Este livro introduz os conceitos e regras básicas de Dungeons & Dragons, permitindo que jogadores iniciem suas primeiras aventuras até o 3º nível. Ele apresenta orientações simplificadas para o Mestre do Jogo e destaca a natureza aberta e expansível do RPG, incentivando a criatividade e adaptação das regras. Para experiências mais avançadas, recomenda-se a série Advanced Dungeons & Dragons.', 500, 999.99, 0, '56.621.637/0001-50', 2008-10-05, 659.068.290-91, DND-999, 2008-06-12, 599.99
+0015, 'Avanced Dungeons & Dragons (First Edition)', 'Advanced Dungeons & Dragons (1ª Edição) é o clássico que definiu o RPG de mesa moderno. Publicado originalmente entre 1977 e 1979, este sistema apresenta regras detalhadas para criação de personagens, combate, magia e exploração, permitindo aventuras épicas em mundos de fantasia. Ideal para mestres e jogadores que buscam a experiência autêntica e desafiadora das origens do D&D.', 1000, 1999.99, 0, '56.621.637/0001-50', 2008-10-05, 659.068.290-91, DND-999, 2008-06-12, 1299.99
+
 }
 
 Compra = {
@@ -80,4 +84,6 @@ ID_Jogo, CPF_Cliente, DataCompra:date
 0005, 058.612.680-53, 2025-08-21
 0010, 728.489.420-29, 2025-10-17
 0001, 444.761.110-41, 2025-10-19
+0014, 659.068.290-91, 2025-02-17
+0015, 659.068.290-91, 2025-02-17
 }

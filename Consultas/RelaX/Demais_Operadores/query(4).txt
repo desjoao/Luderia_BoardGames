@@ -1,0 +1,5 @@
+-- Consulta retorna a relação contendo o nome dos jogos e a quantidade deles que foram vendidos. Ordenado pela quantidade de vendas e ordem alfabetica.
+JogoCompra = Jogo x rho ID_Jogo → ID (Compra)
+JogosComprados = sigma ID_Jogo=ID (JogoCompra)
+Vendas = tau Vendas desc, NomeJogo (gamma NomeJogo; count(NomeJogo) → Vendas (JogosComprados))
+pi NomeJogo, Vendas (Vendas)
